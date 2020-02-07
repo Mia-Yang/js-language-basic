@@ -1,11 +1,11 @@
 describe('for variable', () => {
-  it('should have function scope for var varaible', () => {
+  it('should have function scope for var variable', () => {
     // eslint-disable-next-line vars-on-top, no-var, no-empty
     for (var i = 0; i <= 5; i += 1) { }
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = 6;
+    const expected = undefined;
     // --end->
 
     // eslint-disable-next-line block-scoped-var
@@ -20,7 +20,7 @@ describe('for variable', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = 1000;
+    const expected = undefined;
     // --end->
 
     // eslint-disable-next-line no-undef
@@ -33,7 +33,7 @@ describe('for variable', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = 'new name';
+    const expected = undefined;
     // --end->
 
     expect(constVariable.name).toEqual(expected);
