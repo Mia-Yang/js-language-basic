@@ -17,7 +17,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = unefined;
+    const expected = undefined;
     // --end->
 
     expect(person.whatTheHellIsThat).toEqual(expected);
@@ -150,7 +150,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {};
+    const expected = Object.prototype;
     // --end->
 
     expect(Object.getPrototypeOf(emptyObject)).toBe(expected);
@@ -209,8 +209,8 @@ describe('for object', () => {
     // * rabbitFunctionPrototype
     // * prototypeOfRabbitFunction
     // * functionPrototype
-    const expectedPrototypeOfRabbitInstance = rabbit.prototype;
-    const expectedPrototypeOfRabbitFunction = Function.prototype;
+    const expectedPrototypeOfRabbitInstance = rabbitFunctionPrototype;
+    const expectedPrototypeOfRabbitFunction = functionPrototype;
     // --end->
 
     expect(prototypeOfRabbitInstance).toBe(expectedPrototypeOfRabbitInstance);
@@ -331,7 +331,7 @@ describe('for object', () => {
     expect(rabbit.speak()).toEqual(expectedSpeak);
   });
 
-  fit('should determine whether an instance is derived from certain class', () => {
+  it('should determine whether an instance is derived from certain class', () => {
     class Rabbit {
       constructor(type) { this.type = type; }
 
