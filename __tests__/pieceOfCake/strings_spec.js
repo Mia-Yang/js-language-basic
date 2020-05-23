@@ -37,7 +37,7 @@ describe('for strings', () => {
     expect(string.slice(4, 7)).toEqual(expected);
   });
 
-  fit('should get first index of a string', () => {
+  it('should get first index of a string', () => {
     const string = 'coconuts';
 
     // <--start
@@ -53,7 +53,7 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'coconuts';
     // --end->
 
     expect(string.trim()).toEqual(expected);
@@ -71,12 +71,12 @@ describe('for strings', () => {
     expect(splitted).toEqual(expected);
   });
 
-  it('should join strings', () => {
+  fit('should join strings', () => {
     const splitted = ['what', 'a', 'beautiful', 'day'];
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'what->a->beautiful->day';
     // --end->
 
     expect(splitted.join('->')).toEqual(expected);
