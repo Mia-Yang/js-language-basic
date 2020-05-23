@@ -1,5 +1,5 @@
 describe('for strings', () => {
-  fit('should get character at certain position', () => {
+  it('should get character at certain position', () => {
     const string = 'Hello';
     const characterWithinRange = string[1];
     const characterOutOfRange = string[10];
@@ -26,12 +26,12 @@ describe('for strings', () => {
     expect(template).toEqual(expected);
   });
 
-  it('should get substring', () => {
+  fit('should get substring', () => {
     const string = 'coconuts';
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'nut';
     // --end->
 
     expect(string.slice(4, 7)).toEqual(expected);
