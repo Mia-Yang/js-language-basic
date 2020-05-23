@@ -3,24 +3,24 @@ describe('for strings', () => {
     const string = 'Hello';
     const characterWithinRange = string[1];
     const characterOutOfRange = string[10];
-
+    
     // <--start
     // Please write down the correct value. You should write the final result directly.
     const expectedCharWithinRange = {};
-    const expectedCharOutOfRange = {};
+    const expectedCharOutOfRange = { };
     // --end->
 
     expect(characterWithinRange).toEqual(expectedCharWithinRange);
     expect(characterOutOfRange).toEqual(expectedCharOutOfRange);
   });
 
-  it('should use template string to create strings', () => {
+  fit('should use template string to create strings', () => {
     const variable = 'World';
     const template = `Hello ${variable}`;
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = "Hello World";
     // --end->
 
     expect(template).toEqual(expected);
